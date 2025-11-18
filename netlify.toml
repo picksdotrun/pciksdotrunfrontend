@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[functions]
+  directory = "netlify/functions"
+
+# Uncomment to set envs here instead of Netlify UI/CLI
+# [build.environment]
+#   VITE_SUPABASE_URL = "https://fbwzsmpytdjgbjpwkafy.supabase.co"
+#   VITE_SUPABASE_ANON_KEY = "REPLACE_ME"
+
+# (scheduling moved to Supabase Cron; no Netlify schedules)
